@@ -92,7 +92,11 @@ nav.navbar .navbar-nav > li > a {
 	text-decoration: none;
 }
 
-
+.carousel-control-next, .carousel-control-prev{
+	width: auto;
+}
+.carousel-control-next{right: 15px;}
+.carousel-control-prev{left: 15px;}
 
 /*About Us Start*/
 .left-about-text,
@@ -101,6 +105,8 @@ nav.navbar .navbar-nav > li > a {
 	position: relative;
 	width:79%;
 }
+.our-mission{background:#f8f8f8;}
+
 .left-about-text {
 	width: 20%;
 	font-size: 26px;
@@ -233,6 +239,10 @@ nav.navbar .navbar-nav > li > a {
 	color: #2a6126;
 }
 
+.casestudy-accordin .mb-0 a {
+    color: #444;
+}
+
 
 .footer {
 	padding: 20px;
@@ -259,7 +269,13 @@ nav.navbar .navbar-nav > li > a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: 180px;
+	min-height: 180px;
+}
+
+.page-title p{
+	color: #fff;
+	font-weight: normal;
+	text-shadow: 1px 0 4px rgba(0, 0, 0, 0.4);
 }
 
 .page-title h2 {
@@ -312,9 +328,13 @@ nav.navbar .navbar-nav > li > a {
 
 .accessibility_aboutsection{
 	padding: 20px;
-	background-color:#868e96;
+	background-color:#444;
 	color: #ffffff;
 	font-size: 14px;
+}
+
+.accessibility_aboutsection .headline::after {
+    background-color: #fff;
 }
 
 .accessibility_aboutsection p{
@@ -326,6 +346,11 @@ nav.navbar .navbar-nav > li > a {
 .morethan_com{
 	width: 100%;
 	float: left;
+}
+
+.about_competition{
+	font-weight: bold;
+	padding-bottom:15px;
 }
 
 .morethan_com li {
@@ -379,11 +404,17 @@ h3.location-title {
 }
 .address-block > a {
     font-size: 14px;
+    line-height: 14px;
+    color: #444;
 }
 
 .supplier-listing ul li{
 	font-size: 14px;
 	font-weight: 300;
+}
+
+.supplier-listing li a {
+    color: #444;
 }
 
 .supplier-listing ul{
@@ -419,20 +450,23 @@ h3.supplier-heading {
 }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 1024px) { 
-	nav.navbar .navbar-nav > li > a{ padding:25px 5px;}
-	.carousel-caption{ left:15%; right:15%;}	
-	.carousel-caption h1{ font-size:40px;}
-	
-}
+
  @media (max-width: 1023px) {
- .bottom-heading{ margin-top:50px;}
-	.bottom-heading{ margin-top:50px;}
 	.case-study:first-child .bottom-heading{ margin-top:0px;}
 	.bottom-section-wrap .padding-top-60{ padding-top:40px;}
 	.bottom-section-wrap .padding-bottom-60{ padding-bottom:40px;}
 
  }
+
+@media (max-width: 768px) {
+.left-about-text {
+    width: 25%;
+}
+.right-about-text {
+    width: 73%;
+}
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	nav.navbar .navbar-nav > li > a{ padding:10px 15px;}
@@ -445,16 +479,32 @@ h3.supplier-heading {
 	.right-about-text{ width:100%; padding:0}
 	.right-about-text::before{ display:none;}
 	.bottom-heading{ margin-top:50px;}
-	.left-about-text{font-size:22px}
+	.left-about-text{font-size:22px; text-align: center !important; padding-bottom: 15px;}
+	.left-about-text:after {
+    background-color: #49a942;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 100px;
+}
 	.headline{font-size:18px}
 	.carousel-inner > .item > img, .carousel-inner > .item > a > img{height:400px}
+	.product-list h2 span {
+    font-size: 16px;
+}
 	
 }
-
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
+@media (max-width:640px) { 
+	.accessibility_aboutsection a {
+	    margin-bottom: 10px;
+	}
  
+}
 /* Landscape phones and down */
 @media (max-width: 480px) { 
 
