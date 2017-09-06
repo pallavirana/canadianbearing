@@ -150,10 +150,12 @@ nav.navbar .navbar-nav > li > a {
 	margin-bottom: 40px;
 }
 .solution-list .thumbnail-img {
-	height: 190px;
-	margin-bottom: 15px;
-	position: relative;
-	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    margin-bottom: 15px;
+    position: relative;
 }
 .solution-list .thumbnail-img .readmore {
 	position: absolute;
@@ -449,6 +451,18 @@ h3.supplier-heading {
     padding-left: 30px;
     vertical-align: top;
 }
+
+.current-job-col h3 {
+	font-size: 18px;
+}
+
+.current-job-col h3 a {
+ color: #444;
+}
+
+.current-job-col h3 a:hover {
+	text-decoration: none;
+}
  
 /* Portrait tablet to landscape and desktop */
 
@@ -498,6 +512,13 @@ h3.supplier-heading {
 	.product-list h2 span {
     font-size: 16px;
 }
+
+.current-job-col {
+		text-align: center;
+	}
+	.technical-sale-col {
+		max-width: 100%;
+	}
 	
 }
 @media (max-width:640px) { 
