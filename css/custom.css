@@ -392,6 +392,7 @@ h3.location-title {
 	float: left;
 	padding: 15px;
 	margin-bottom:25px;
+	overflow-wrap: break-word;
 }
 
 .address-block > h4 {
@@ -503,6 +504,8 @@ h3.supplier-heading {
 	.accessibility_aboutsection a {
 	    margin-bottom: 10px;
 	}
+
+	.address-block {text-align: center;}
  
 }
 /* Landscape phones and down */
