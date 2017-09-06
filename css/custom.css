@@ -506,6 +506,10 @@ h3.supplier-heading {
 	}
 
 	.address-block {text-align: center;}
+	.product-list p {
+    min-height: 100px;
+    padding-bottom: 0;
+}
  
 }
 /* Landscape phones and down */
