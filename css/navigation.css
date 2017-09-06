@@ -1,0 +1,104 @@
+
+.navbar-nav .dropdown-menu{
+	min-width:100%;
+	
+	border:0;
+} 
+.dropdown-menu > li.kopie > a {
+    padding-left:5px;
+}
+ 
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-menu{   -webkit-border-radius:0;-moz-border-radius:0;border-radius:0; margin:0;}
+.dropdown-submenu>.dropdown-menu {
+   top:0;left:100%;
+   margin-top:-6px;margin-left:-1px;
+   -webkit-border-radius:0;-moz-border-radius:0;border-radius:0;
+ }
+.dropdown-menu > li > a{padding:8px 15px}
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;  
+  height: 0;     
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+ 
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+ }
+
+.dropdown-menu a:hover, .dropdown-menu a:hover {
+  text-decoration: none; background:#444; color:#fff
+}  
+  
+@media (max-width: 767px) {
+
+  .navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color:#fff;
+    background-color: #444;
+    border-radius:0;
+    margin-top: 1px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #444; background:#fff; border-radius:0
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+     color: #fff; background:#444; text-decoration:none; border:0
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+
+}
+ 
+@media (min-width: 768px) {
+  ul.nav li:hover > .dropdown-menu {
+    display: block;border-radius:0;padding:0
+  }
+  #navbar {
+    text-align: center;
+  }
+}  
+@media (max-width: 767px) {
+.navbar-nav .open .dropdown-menu {border:0; }
+.navbar-collapse{padding:0}
+nav.navbar .navbar-nav > li > a {
+    padding: 5px 10px;
+}
+.navbar-nav .open .dropdown-menu{background:#fff; padding:0; border:0}
+.navbar-nav {
+    margin: 0;
+}
+.navbar-default .navbar-collapse{padding:10px 0}
+}
