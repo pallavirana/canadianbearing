@@ -38,7 +38,12 @@
 .dropdown-menu a:hover, .dropdown-menu a:hover {
   text-decoration: none; background:#444; color:#fff
 }  
-  
+ @media (max-width:990px) { 
+ nav.navbar .navbar-nav > li > a {
+    padding: 5px 10px;
+}
+}
+
 @media (max-width:768px) {
  nav.navbar .navbar-nav > li > a {
     padding: 5px 10px;
