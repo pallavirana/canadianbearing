@@ -14,9 +14,7 @@ h2{
 li{font-size: 16px;font-weight: 300;}
 p{font-weight: 300; font-size: 16px}
 /*Top & main Nav css start*/
-.navbar-nav > li:hover .dropdown-menu{
-	display:block;
-}
+
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(255, 255, 255, 1)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E");
 }
@@ -236,6 +234,18 @@ nav.navbar .navbar-nav > li > a {
 .case-study li:nth-child(1) {
 	margin-top: 0;
 }
+
+.product-list.text-left {
+    padding-bottom: 20px;
+}
+.productlist-a {
+    bottom: 0;
+    color: #49a942;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease 0s;
+}
 .green-link {
 	margin-top: 5px;
 	color: #49a942;
@@ -403,6 +413,30 @@ h3.location-title {
     padding-bottom: 10px;
     width: 100%;
 }
+
+.head-address-block{
+    background: #f5f5f5 none repeat scroll 0 0;
+    float: left;
+    margin-bottom: 25px;
+    margin-left: 2%;
+    overflow-wrap: break-word;
+    padding: 15px;
+    width:48%;
+}
+
+.head-address-block > h4 {
+    font-size:14px;
+    font-weight: bold;
+}
+.head-address-block > p {
+    font-size: 14px;
+    margin: 0;
+}
+.head-address-block > a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #444;
+}
 .address-block {
 	background: #f5f5f5;
 	width: 100%;
@@ -555,9 +589,9 @@ _:-o-prefocus, .selector {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	nav.navbar .navbar-nav > li > a{ padding:10px 15px;}
+	/*nav.navbar .navbar-nav > li > a{ padding:10px 15px;}
 	.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus{ background:#444; border-color:#444;}
-	.navbar .navbar-toggler .icon-bar{ background-color:#888;}
+	.navbar .navbar-toggler .icon-bar{ background-color:#888;}*/
 	/*.navbar .navbar-toggler{background:#49a942; border-color:#ddd;}*/
 	.carousel-caption{ left:15%; right:15%;}	
 	.carousel-caption h1{ font-size:35px;}
@@ -626,6 +660,19 @@ _:-o-prefocus, .selector {
   width: 100%; 
 }
 
+.carousel-caption > a {
+    padding: 1px 10px;
+    font-size: 14px;
+  }
+.carousel-caption h1 {
+    font-size:17px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+.head-address-block{
+  width: 100%;
+  margin-left:0;
+}
 
 }
 /* Landscape phones and down */
