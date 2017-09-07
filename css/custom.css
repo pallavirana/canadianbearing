@@ -368,6 +368,10 @@ h2.about-heding span {
     vertical-align: top;
 }
 
+.bottom-section-wrap .case-study {
+    margin-bottom: 0;
+}
+
 /*About US Start*/
 
 .accessibility_aboutsection{
@@ -631,6 +635,10 @@ _:-o-prefocus, .selector {
 }
 .career_acc{
   text-align: left !important
+}
+
+.bottom-heading.cb-heading {
+    margin-top: 52px;
 }
 	
 }
