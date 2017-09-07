@@ -179,24 +179,24 @@
         <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-   <script>
+   <script type="text/javascript">
       $(document).ready(function() {
     function bindNavbar() {
-        if ($(window).width() > 767) {
-            $('.navbar .dropdown').on('mouseover', function(){
-                $('.dropdown-toggler', this).next('.dropdown-menu').show();
+        if ($(window).width() > 990) {
+            $('.navbar-collapse .dropdown').on('mouseover', function(){
+                $('.dropdown-toggle', this).next('.dropdown-menu').show();
             }).on('mouseout', function(){
-                $('.dropdown-toggler', this).next('.dropdown-menu').hide();
+                $('.dropdown-toggle', this).next('.dropdown-menu').hide();
             });
             
-            $('.dropdown-toggler').click(function() {
+            $('.dropdown-toggle').click(function() {
                 if ($(this).next('.dropdown-menu').is(':visible')) {
                     window.location = $(this).attr('href');
                 }
             });
         }
         else {
-            $('.navbar .dropdown').off('mouseover').off('mouseout');
+            $('.navbar-collapse .dropdown').off('mouseover').off('mouseout');
         }
     }
     
