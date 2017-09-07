@@ -57,10 +57,10 @@
       <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-         <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a href="product-listing.html" class="nav-link dropdown-toggle" id="navbarNavDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product & Services <span class="caret"></span></a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Product 1</a>
+                <a class="dropdown-item" href="product-listing.html">Product 1</a>
               <a class="dropdown-item" href="#">Product 2</a>
               <a class="dropdown-item" href="#">Product 3</a>
             </div>
@@ -68,7 +68,7 @@
           <li class="nav-item dropdown">
             <a href="product-listing2.html" class="nav-link dropdown-toggle" id="navbarNavDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions <span class="caret"></span></a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Solution 1</a>
+                <a class="dropdown-item" href="product-listing2.html">Solution 1</a>
               <a class="dropdown-item" href="#">Solution 2</a>
               <a class="dropdown-item" href="#">Solution 3</a>
             </div>
@@ -139,9 +139,28 @@
   </div>
 </div>
   
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">   
+ $(document).ready(function() { 
+      var navbarToggle = '.navbar-toggler'; // name of navbar toggle, BS3 = '.navbar-toggle', BS4 = '.navbar-toggler'  
+      $('.dropdown, .dropup').each(function() {
+        var dropdown = $(this),
+          dropdownToggle = $('[data-toggle="dropdown"]', dropdown),
+          dropdownHoverAll = dropdownToggle.data('dropdown-hover-all') || false;
+        
+        // Mouseover
+        dropdown.hover(function(){
+          var notMobileMenu = $(navbarToggle).css('display') === 'none';
+          if ((dropdownHoverAll == true || (dropdownHoverAll == false && notMobileMenu))) { 
+            dropdownToggle.trigger('click');
+          }
+        })
+      });
+    });</script>
 </body>
 </html>
