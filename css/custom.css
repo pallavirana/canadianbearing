@@ -64,6 +64,10 @@ nav.navbar .navbar-nav > li > a {
     color: #49a942 !important;
 }
 
+nav.navbar .navbar-nav > li.dropdown.show > a{
+    background-color: #fff;
+    color: #49a942 !important;
+}
 
 /*Slider Css Start*/
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
