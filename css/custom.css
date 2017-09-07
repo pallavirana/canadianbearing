@@ -671,6 +671,16 @@ _:-o-prefocus, .selector {
   margin-left:0;
 }
 
+.sendresume {
+    float: left;
+    width: 100%;
+}
+
+}
+@media (max-width:360px) { 
+.career-or {
+    display: none;
+}
 }
 /* Landscape phones and down */
 @media (max-width: 320px) { 
