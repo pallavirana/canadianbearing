@@ -247,7 +247,7 @@ nav.navbar .navbar-nav > li.dropdown.show > a{
     color: #49a942;
     margin-top: 5px;
     position: absolute;
-    right: 0;
+    right: 15px;
     transition: all 0.3s ease 0s;
 }
 .green-link {
