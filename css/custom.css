@@ -561,7 +561,7 @@ _:-o-prefocus, .selector {
 	/*.navbar .navbar-toggler{background:#49a942; border-color:#ddd;}*/
 	.carousel-caption{ left:15%; right:15%;}	
 	.carousel-caption h1{ font-size:35px;}
-	.left-about-text{ width:100%; padding:0; margin:0 0 10px 0; text-align:left!important;float: left }
+	.left-about-text{ width:100%; padding:0; margin:0 0 25px 0; text-align:left!important;float: left }
 	.right-about-text{ width:100%; padding:0}
 	.right-about-text::before{ display:none;}
 	.bottom-heading{ margin-top:50px;}
