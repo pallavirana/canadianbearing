@@ -48,8 +48,6 @@
  nav.navbar .navbar-nav > li > a {
     padding: 5px 10px;
 }
-  .carousel-caption{ left:15%; right:15%;}  
-  .carousel-caption h1{ font-size:30px;}
   
   .navbar-nav  {
      display: inline;
@@ -115,7 +113,3 @@ nav.navbar .navbar-nav > li > a {
 }
 
 
-
-@media (max-width:640px) {
-  
-}
