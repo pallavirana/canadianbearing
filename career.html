@@ -214,8 +214,8 @@
         <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">   
- $(document).ready(function() { 
+    <!-- <script type="text/javascript">   
+     $(document).ready(function() { 
       var navbarToggle = '.navbar-toggler'; // name of navbar toggle, BS3 = '.navbar-toggle', BS4 = '.navbar-toggler'  
       $('.dropdown, .dropup').each(function() {
         var dropdown = $(this),
@@ -224,12 +224,12 @@
         
         // Mouseover
         dropdown.hover(function(){
-          var notMobileMenu = $(navbarToggle).css('display') === 'none';
+          var notMobileMenu = $(navbarToggle).size() > 0 && $(navbarToggle).css('display') === 'none';
           if ((dropdownHoverAll == true || (dropdownHoverAll == false && notMobileMenu))) { 
             dropdownToggle.trigger('click');
           }
         })
       });
-    });</script>
+    });</script> -->
 </body>
 </html>
