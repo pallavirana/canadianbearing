@@ -226,26 +226,33 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">   
- $(document).ready(function() { 
-      var navbarToggle = '.navbar-toggler'; // name of navbar toggle, BS3 = '.navbar-toggle', BS4 = '.navbar-toggler'  
-      $('.dropdown, .dropup').each(function() {
-        var dropdown = $(this),
-          dropdownToggle = $('[data-toggle="dropdown"]', dropdown),
-          dropdownHoverAll = dropdownToggle.data('dropdown-hover-all') || false;
-        
-        // Mouseover
-        dropdown.hover(function(){
-          var notMobileMenu = $(navbarToggle).css('display') === 'none';
-          if ((dropdownHoverAll == true || (dropdownHoverAll == false && notMobileMenu))) { 
-            dropdownToggle.trigger('click');
-          }
-        })
-      });
-    });</script>
-
-
-
+<script>
+      $(document).ready(function() {
+    function bindNavbar() {
+        if ($(window).width() > 767) {
+            $('.navbar .dropdown').on('mouseover', function(){
+                $('.dropdown-toggler', this).next('.dropdown-menu').show();
+            }).on('mouseout', function(){
+                $('.dropdown-toggler', this).next('.dropdown-menu').hide();
+            });
+            
+            $('.dropdown-toggler').click(function() {
+                if ($(this).next('.dropdown-menu').is(':visible')) {
+                    window.location = $(this).attr('href');
+                }
+            });
+        }
+        else {
+            $('.navbar .dropdown').off('mouseover').off('mouseout');
+        }
+    }
+    
+    $(window).resize(function() {
+        bindNavbar();
+    });
+    
+    bindNavbar();
+});
+    </script>
   </body>
 </html>
