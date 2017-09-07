@@ -595,7 +595,7 @@ _:-o-prefocus, .selector {
 margin-top:10px;
 }	
 .d-none {
-    display: block;
+    display: block !important;
 }
 	
 }
@@ -609,7 +609,8 @@ margin-top:10px;
     min-height: 100px;
     padding-bottom: 0;
 }
- 
+
+
 }
 /* Landscape phones and down */
 @media (max-width: 480px) { 

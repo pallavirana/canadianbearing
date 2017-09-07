@@ -111,4 +111,21 @@ nav.navbar .navbar-nav > li > a {
     margin: 0;
 }
 .navbar-default .navbar-collapse{padding:10px 0}
+
+}
+
+@media (max-width:640px) {
+.carousel-caption h1 {
+    font-size:22px;
+}
+}
+
+@media (max-width:365px) {
+  .carousel-caption > a {
+    padding: 1px 10px;
+  }
+.carousel-caption h1 {
+    font-size: 16px;
+    margin-bottom:10px;
+}
 }
