@@ -114,9 +114,14 @@ nav.navbar .navbar-nav > li > a {
 	display: inline-block;
 	position: relative;
 	width:79%;
+  vertical-align: middle;
 }
 /*.our-mission{background:#f8f8f8;}*/
-
+.joblocation{
+  width: 100%;
+  float: left;
+  vertical-align: middle;
+}
 .left-about-text {
 	width: 20%;
 	font-size: 26px;
@@ -590,22 +595,34 @@ _:-o-prefocus, .selector {
     padding:15px;
 }
 
-.bottom-heading{
-margin-top:10px;
-}	
+.bottom-heading {
+    margin-top: 34px;
+}
+margin-bottom: 10px;
 .d-none {
     display: block !important;
+}
+
+.career_acc{
+  text-align: left !important
 }
 	
 }
 @media (max-width:640px) { 
 	.accessibility_aboutsection a {
 	    margin-bottom: 10px;
+      margin-top: 10px;
 	}
+
 
 	.product-list p {
     min-height: 100px;
     padding-bottom: 0;
+}
+
+.joblocation span{
+  float: left !important;
+  width: 100%; 
 }
 
 

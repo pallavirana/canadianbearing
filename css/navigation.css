@@ -123,9 +123,11 @@ nav.navbar .navbar-nav > li > a {
 @media (max-width:365px) {
   .carousel-caption > a {
     padding: 1px 10px;
+    font-size: 14px;
   }
 .carousel-caption h1 {
-    font-size: 16px;
+    font-size:17px;
+    font-weight: 600;
     margin-bottom:10px;
 }
 }
