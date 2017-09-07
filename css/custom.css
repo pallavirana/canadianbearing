@@ -4,11 +4,17 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
-p{font-weight: 300;}
-/*Top & main Nav css start*/
-.navbar-nav > li:hover .dropdown-menu{
-	display:block;
+h3, h4 {
+    font-size:17px; font-weight: bold;
 }
+
+h2{
+  font-size:22px; font-weight: bold;
+}
+li{font-size: 16px;font-weight: 300;}
+p{font-weight: 300; font-size: 16px}
+/*Top & main Nav css start*/
+
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(255, 255, 255, 1)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E");
 }
@@ -42,7 +48,6 @@ nav.navbar {
 }
 .navbar-brand {
     float: left;
-    font-size: 18px;
     height: auto;
     line-height: 20px;
     padding: 5px 5px;
@@ -107,9 +112,14 @@ nav.navbar .navbar-nav > li > a {
 	display: inline-block;
 	position: relative;
 	width:79%;
+  vertical-align: middle;
 }
-.our-mission{background:#f8f8f8;}
-
+/*.our-mission{background:#f8f8f8;}*/
+.joblocation{
+  width: 100%;
+  float: left;
+  vertical-align: middle;
+}
 .left-about-text {
 	width: 20%;
 	font-size: 26px;
@@ -133,7 +143,6 @@ nav.navbar .navbar-nav > li > a {
 
 /*Industry solutions Section Start*/
 .headline {
-	font-size: 26px;
 	position: relative;
 	padding-bottom: 10px;
 }
@@ -144,7 +153,7 @@ nav.navbar .navbar-nav > li > a {
   height: 1px;
   position: absolute;
   background-color: #49a942;
-  bottom: 0;
+  bottom:0;
   left: 0;
   right: 0;
   margin: auto;
@@ -180,7 +189,6 @@ nav.navbar .navbar-nav > li > a {
 	position: relative;
 	padding-bottom: 12px;
 	margin-bottom: 8px;
-	font-size: 18px;
 }
 .solution-list h4::after {
 	position: absolute;
@@ -191,11 +199,6 @@ nav.navbar .navbar-nav > li > a {
 	bottom: 0;
 	left: 0;
 	background-color: #49a942;
-}
-.solution-list p {
-	font-size: 17px;
-	font-weight: 300;
-	line-height: 1.3;
 }
 /*Industry solutions Section End*/
 
@@ -211,9 +214,6 @@ nav.navbar .navbar-nav > li > a {
 	background-size: cover;
 }
 .bottom-section-wrap li p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;
     margin-bottom: 0;
 }
 .bottom-heading {
@@ -224,15 +224,27 @@ nav.navbar .navbar-nav > li > a {
 }
 
 .bottom-section-wrap .case-study .company-name {
-	font-size: 14px;
   font-weight: 600;
   margin-top: 3px;
+   font-size: 15px;
 }
 .case-study li {
 	margin-top: 22px;
 }
 .case-study li:nth-child(1) {
 	margin-top: 0;
+}
+
+.product-list.text-left {
+    padding-bottom: 20px;
+}
+.productlist-a {
+    bottom: 0;
+    color: #49a942;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease 0s;
 }
 .green-link {
 	margin-top: 5px;
@@ -272,7 +284,6 @@ nav.navbar .navbar-nav > li > a {
 	padding: 20px;
 	background-color: #49a942;
 	color: #ffffff;
-	font-size: 14px;
 	font-weight: 300;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -313,8 +324,9 @@ nav.navbar .navbar-nav > li > a {
     border-bottom: 1px solid #49a942;
     color: #fff;
     float: left;
-    font-size: 17px;
+    font-size:18px;
     width: 100%;
+    font-weight: bold;
 }
 .product-list h2 span {
     background: #49a942 none repeat scroll 0 0;
@@ -322,16 +334,26 @@ nav.navbar .navbar-nav > li > a {
     padding:6px 15px;
 }
 
+h2.about-heding  {
+    border-bottom: 1px solid #49a942;
+    color: #fff;
+    float: left;
+    width: 100%;
+}
+
+h2.about-heding span {
+    background: #49a942 none repeat scroll 0 0;
+    float: left;
+    padding:10px 20px;
+}
+
 .product-list p {
     float: left;
-    font-weight: 300;
     width: 100%;
-    padding-bottom: 20px;
 }
 
 .product-list a.viewall {
 	color: #49a942;
-	font-size: 14px;
 	float:right;
 	font-weight: 300;
 }
@@ -340,20 +362,21 @@ nav.navbar .navbar-nav > li > a {
     background-image: url("../images/arrow.png");
     background-position: left 8px;
     background-repeat: no-repeat;
-    font-size: 17px;
     font-weight: 300;
     padding-bottom: 10px;
     padding-left: 30px;
     vertical-align: top;
 }
 
+.bottom-section-wrap .case-study {
+    margin-bottom: 0;
+}
+
 /*About US Start*/
 
 .accessibility_aboutsection{
-	padding: 20px;
 	background-color:#444;
 	color: #ffffff;
-	font-size: 14px;
 }
 
 .accessibility_aboutsection .headline::after {
@@ -380,34 +403,43 @@ nav.navbar .navbar-nav > li > a {
     background-image: url("../images/arrow.png");
     background-position: left 8px;
     background-repeat: no-repeat;
-    font-size: 17px;
-    font-weight: 300;
     padding-bottom: 10px;
     padding-left: 30px;
     vertical-align: top;
-}
-
-.casestudy-accordin h3{
-	font-weight: bold;
-	margin-bottom: 3px;
-}
-
-.casestudy-accordin span{
-	font-size:13px;
-	margin-bottom:10px;
-	width: 100%;
-	float: left;
 }
 
 
 /*LOcation css start*/
 h3.location-title {
 	color: #49a942;
-	font-weight: bold;
     border-bottom: 1px solid #ddd;
     float: left;
     padding-bottom: 10px;
     width: 100%;
+}
+
+.head-address-block{
+    background: #f5f5f5 none repeat scroll 0 0;
+    float: left;
+    margin-bottom: 25px;
+    margin-left: 2%;
+    overflow-wrap: break-word;
+    padding: 15px;
+    width:48%;
+}
+
+.head-address-block > h4 {
+    font-size:14px;
+    font-weight: bold;
+}
+.head-address-block > p {
+    font-size: 14px;
+    margin: 0;
+}
+.head-address-block > a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #444;
 }
 .address-block {
 	background: #f5f5f5;
@@ -419,7 +451,7 @@ h3.location-title {
 }
 
 .address-block > h4 {
-    font-size: 14px;
+    font-size:14px;
     font-weight: bold;
 }
 .address-block > p {
@@ -451,43 +483,53 @@ h3.location-title {
 
 h3.supplier-heading {
 	color: #49a942;
-	font-weight: bold;
     border-bottom: 1px solid #ddd;
     float: left;
     padding-bottom: 10px;
     width: 100%;
 }
 
-.cb_benefits h2{
-	font-size: 18px;
-}
+
 
 .twoColumn li{
     background-image: url("../images/arrow.png");
     background-position: left 8px;
     background-repeat: no-repeat;
-    font-size: 17px;
-    font-weight: 300;
     padding-bottom: 10px;
     padding-left: 30px;
     vertical-align: top;
 }
 
-.current-job-col h3 {
-	font-size: 18px;
+.current-job-col {
+    background:#f2f2f2;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.current-job-col h3 a {
- color: #444;
+.current-job-col > a {
+    color: #444;
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+.current-job-col a span {
+    float: left;
+    font-size: 14px;
+    font-style: italic;
+    width: 100%;
+}
+
+.current-job-col > a:hover, .current-job-col > a:focus {
+    background: #28a745 none repeat scroll 0 0;
+    color: #fff;
+    text-decoration: none;
 }
 
 .current-job-col h3 a:hover {
 	text-decoration: none;
-}
-
-.career-or{
-	width: 100%;
-	float: left;
 }
 
 .styled-select {
@@ -551,13 +593,9 @@ _:-o-prefocus, .selector {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	nav.navbar .navbar-nav > li > a{ padding:10px 15px;}
-	.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus{ background:#444; border-color:#444;}
-	.navbar .navbar-toggler .icon-bar{ background-color:#888;}
-	/*.navbar .navbar-toggler{background:#49a942; border-color:#ddd;}*/
 	.carousel-caption{ left:15%; right:15%;}	
 	.carousel-caption h1{ font-size:35px;}
-	.left-about-text{ width:100%; padding:0; margin:0 0 10px 0; text-align:left!important;float: left }
+	.left-about-text{ width:100%; padding:0; margin:0 0 25px 0; text-align:left!important;float: left }
 	.right-about-text{ width:100%; padding:0}
 	.right-about-text::before{ display:none;}
 	.bottom-heading{ margin-top:50px;}
@@ -574,49 +612,89 @@ _:-o-prefocus, .selector {
     right: 0;
     width: 100px;
 }
-	.headline{font-size:18px}
-	.carousel-inner > .item > img, .carousel-inner > .item > a > img{height:400px}
-	.product-list h2 span {
+.headline{font-size:18px}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{height:400px}
+.product-list h2 span {
     font-size: 16px;
 }
-
 .current-job-col {
 		text-align: center;
 	}
-	.technical-sale-col {
+.technical-sale-col {
 		max-width: 100%;
-	}
-
+}
 .col-md-4.case-study {
     padding:15px;
 }
-
-.bottom-heading{
-margin-top:10px;
-}	
+.bottom-heading {
+    margin-top: 34px;
+    margin-bottom: 10px;
+}
 .d-none {
     display: block !important;
+}
+.career_acc{
+  text-align: left !important
+}
+
+.bottom-heading.cb-heading {
+    margin-top: 52px;
 }
 	
 }
 @media (max-width:640px) { 
 	.accessibility_aboutsection a {
 	    margin-bottom: 10px;
+      margin-top: 10px;
 	}
-
-	.address-block {text-align: center;}
-	.product-list p {
+.product-list p {
     min-height: 100px;
     padding-bottom: 0;
 }
 
+.joblocation span{
+  float: left !important;
+  width: 100%; 
+}
+
+.carousel-caption > a {
+    padding: 1px 10px;
+    font-size: 14px;
+  }
+.carousel-caption h1 {
+    font-size:17px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+.head-address-block{
+  width: 100%;
+  margin-left:0;
+}
+
+.sendresume {
+    float: left;
+    width: 100%;
+}
 
 }
+@media (max-width:360px) { 
+.career-or {
+    display: none;
+}
+}
 /* Landscape phones and down */
-@media (max-width: 480px) { 
+@media (max-width: 320px) { 
 
 	.carousel-caption{ left:15%; right:15%;}	
-	.carousel-caption h1{ font-size:25px;}
+  .carousel-caption > a {
+    padding: 1px 10px;
+    font-size:12px;
+  }
+.carousel-caption h1 {
+    font-size:14px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
 
 }	
 	

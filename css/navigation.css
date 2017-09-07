@@ -48,8 +48,6 @@
  nav.navbar .navbar-nav > li > a {
     padding: 5px 10px;
 }
-  .carousel-caption{ left:15%; right:15%;}  
-  .carousel-caption h1{ font-size:30px;}
   
   .navbar-nav  {
      display: inline;
@@ -94,7 +92,7 @@
  
 @media (min-width: 768px) {
   ul.nav li:hover > .dropdown-menu {
-    display: block;border-radius:0;padding:0
+border-radius:0;padding:0
   }
   #navbar {
     text-align: center;
@@ -114,18 +112,4 @@ nav.navbar .navbar-nav > li > a {
 
 }
 
-@media (max-width:640px) {
-.carousel-caption h1 {
-    font-size:22px;
-}
-}
 
-@media (max-width:365px) {
-  .carousel-caption > a {
-    padding: 1px 10px;
-  }
-.carousel-caption h1 {
-    font-size: 16px;
-    margin-bottom:10px;
-}
-}
