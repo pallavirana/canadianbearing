@@ -526,7 +526,7 @@ h3.supplier-heading {
     width: 100%;
 }
 
-.current-job-col > a:hover, .current-job-col > a:focus {
+.current-job-col:hover, .current-job-col:focus, .current-job-col:hover a, .current-job-col:focus a{
     background: #28a745 none repeat scroll 0 0;
     color: #fff;
     text-decoration: none;
