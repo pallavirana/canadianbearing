@@ -668,7 +668,6 @@ _:-o-prefocus, .selector {
 @media (max-width: 480px) { 
 
 	.carousel-caption{ left:15%; right:15%;}	
-	.carousel-caption h1{ font-size:25px;}
 
 }	
 	
