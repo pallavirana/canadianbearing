@@ -597,8 +597,9 @@ _:-o-prefocus, .selector {
 
 .bottom-heading {
     margin-top: 34px;
+    margin-bottom: 10px;
 }
-margin-bottom: 10px;
+
 .d-none {
     display: block !important;
 }
