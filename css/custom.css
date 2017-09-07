@@ -9,6 +9,9 @@ p{font-weight: 300;}
 .navbar-nav > li:hover .dropdown-menu{
 	display:block;
 }
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(255, 255, 255, 1)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E");
+}
 .top-navbar{
 	background: #444;
 	width: 100%;
@@ -199,14 +202,19 @@ nav.navbar .navbar-nav > li > a {
 .bottom-section-wrap {
 	background-color: #F8F6F8;
 }
+.bottom-section-wrap .padding-bottom-60{
+	padding-bottom: 30px;
+}
+
 .bottom-section-wrap > .container {
 	background-image: url('../images/bg2.png');
 	background-size: cover;
 }
-.bottom-section-wrap p {
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 1.5;
+.bottom-section-wrap li p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 .bottom-heading {
 	font-size: 20px;
@@ -226,9 +234,6 @@ nav.navbar .navbar-nav > li > a {
 .case-study li:nth-child(1) {
 	margin-top: 0;
 }
-.case-study p {
-	line-height: 1.35;
-}
 .green-link {
 	margin-top: 5px;
 	color: #49a942;
@@ -243,6 +248,23 @@ nav.navbar .navbar-nav > li > a {
 
 .casestudy-accordin .mb-0 a {
     color: #444;
+}
+
+.case-study {
+    background: #f8f6f8;
+    float: left;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.case-study h3 {
+    color: #49a942;
+    font-weight: 500;
+}
+
+.col-md-4.case-study{
+	padding: 0
 }
 
 
@@ -305,7 +327,6 @@ nav.navbar .navbar-nav > li > a {
     font-weight: 300;
     width: 100%;
     padding-bottom: 20px;
-    min-height:120px;
 }
 
 .product-list a.viewall {
@@ -463,6 +484,52 @@ h3.supplier-heading {
 .current-job-col h3 a:hover {
 	text-decoration: none;
 }
+
+.career-or{
+	width: 100%;
+	float: left;
+}
+
+.styled-select {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  
+  overflow: hidden;
+  position: relative;
+}
+.styled-select, .styled-select select { width:100%}
+select:focus { outline: none; }
+.styled-select select {
+  height: 34px;
+  padding: 5px 0 5px 5px;
+  background: transparent;
+  border: none;
+  
+  /*hide default down arrow in webkit */
+  -webkit-appearance: none; 
+}
+
+@-moz-document url-prefix(){
+ .styled-select select {
+    opacity: 0;
+    width: 100%;
+}
+}
+
+.fa-sort-desc {
+  position: absolute;
+  top:7px;
+  right: 12px;
+  font-size: 24px;
+}
+
+ select::-ms-expand { display: none; } /* hide default down arrow in IE10*/
+
+/* hack to fall back in opera */
+_:-o-prefocus, .selector {
+  .styled-select { background: none; }
+  }
  
 /* Portrait tablet to landscape and desktop */
 
@@ -519,6 +586,17 @@ h3.supplier-heading {
 	.technical-sale-col {
 		max-width: 100%;
 	}
+
+.col-md-4.case-study {
+    padding:15px;
+}
+
+.bottom-heading{
+margin-top:10px;
+}	
+.d-none {
+    display: block;
+}
 	
 }
 @media (max-width:640px) { 
