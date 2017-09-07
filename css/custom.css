@@ -59,12 +59,7 @@ nav.navbar .navbar-nav > li > a {
     font-size: 16px;
 }
 
-.navbar .navbar-nav > li > a:hover{
-    background-color: #fff;
-    color: #49a942 !important;
-}
-
-.navbar .navbar-nav > li.show a{
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li:hover > a{
     background-color: #fff;
     color: #49a942 !important;
 }
