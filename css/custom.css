@@ -3,7 +3,9 @@ body{
 	color:#444;
 	font-family: 'Open Sans', sans-serif;
 }
-
+*, a:hover{
+  text-decoration: none;
+}
 h3, h4 {
     font-size:17px; font-weight: bold;
 }
@@ -148,7 +150,6 @@ nav.navbar .navbar-nav > li.dropdown.show > a{
 /*Industry solutions Section Start*/
 .headline {
 	position: relative;
-	padding-bottom: 10px;
 }
 .headline:after {
 	content: '';
@@ -239,6 +240,11 @@ nav.navbar .navbar-nav > li.dropdown.show > a{
 	margin-top: 0;
 }
 
+.requriedicon{
+  color: red;
+  font-size: 12px;
+}
+
 .product-list.text-left {
     padding-bottom: 20px;
 }
@@ -256,6 +262,7 @@ nav.navbar .navbar-nav > li.dropdown.show > a{
 	transition: all .3s;
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
+  font-weight: 300;
 }
 .green-link:hover {
 	text-decoration: none;
@@ -276,13 +283,11 @@ nav.navbar .navbar-nav > li.dropdown.show > a{
 
 .case-study h3 {
     color: #49a942;
-    font-weight: 500;
 }
 
 .col-md-4.case-study{
-	padding: 0
+	padding: 0 0 0 15px
 }
-
 
 .footer {
 	padding: 20px;
@@ -313,14 +318,13 @@ nav.navbar .navbar-nav > li.dropdown.show > a{
 
 .page-title p{
 	color: #fff;
-	font-weight: normal;
+	font-weight:300;
 	text-shadow: 1px 0 4px rgba(0, 0, 0, 0.4);
 }
 
 .page-title h2 {
     color: #fff;
     font-size: 28px;
-    font-weight: bold;
     padding-top: 65px;
     text-shadow: 1px 0 4px rgba(0, 0, 0, 0.4);
 }
@@ -330,7 +334,6 @@ nav.navbar .navbar-nav > li.dropdown.show > a{
     float: left;
     font-size:18px;
     width: 100%;
-    font-weight: bold;
 }
 .product-list h2 span {
     background: #49a942 none repeat scroll 0 0;
@@ -362,16 +365,23 @@ h2.about-heding span {
 	font-weight: 300;
 }
 
+
+.product-list li::before {
+    color: green;
+    content:"\f101";
+    font-family: FontAwesome;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+}
 .product-list li {
-    background-image: url("../images/arrow.png");
-    background-position: left 8px;
-    background-repeat: no-repeat;
     font-weight: 300;
     padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 15px;
+    position: relative;
     vertical-align: top;
 }
-
 .bottom-section-wrap .case-study {
     margin-bottom: 0;
 }
@@ -389,7 +399,6 @@ h2.about-heding span {
 
 .accessibility_aboutsection p{
 	margin-bottom: 5px;
-	font-weight:500;
 }
 
 
@@ -403,13 +412,21 @@ h2.about-heding span {
 	padding-bottom:15px;
 }
 
+.morethan_com li::before {
+    color: green;
+    content:"\f101";
+    font-family: FontAwesome;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+}
+
 .morethan_com li {
-    background-image: url("../images/arrow.png");
-    background-position: left 8px;
-    background-repeat: no-repeat;
     padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left:15px;
     vertical-align: top;
+    position: relative;
 }
 
 
@@ -422,14 +439,22 @@ h3.location-title {
     width: 100%;
 }
 
-.head-address-block{
+.head-address-block {
     background: #f5f5f5 none repeat scroll 0 0;
-    float: left;
     margin-bottom: 25px;
-    margin-left: 2%;
     overflow-wrap: break-word;
-    padding: 15px;
-    width:48%;
+    padding: 15px 15px 15px 35px;
+    position: relative;
+}
+
+.head-address-block h4::before {
+    content:"\f041";
+    font-size: 14px;
+    font-family: FontAwesome;
+    left: 21px;
+    position: absolute;
+     top: 15px;
+     color: #28a745;
 }
 
 .head-address-block > h4 {
@@ -439,12 +464,38 @@ h3.location-title {
 .head-address-block > p {
     font-size: 14px;
     margin: 0;
+    position: relative;
+     padding-left: 6px;
 }
 .head-address-block > a {
     font-size: 14px;
     line-height: 14px;
     color: #444;
+     position: relative;
+      padding-left: 6px;
 }
+
+
+.call::before {
+    content: "\f095";
+    font-family: fontawesome;
+    font-size: 14px;
+    left: -15px;
+    position: absolute;
+    top: 0;
+    color: #28a745;
+}
+
+.mail::before {
+    content: "\f0e0";
+    font-family: fontawesome;
+    font-size: 14px;
+    left: -15px;
+    position: absolute;
+    top: 3px;
+    color: #28a745;
+}
+
 .address-block {
 	background: #f5f5f5;
 	width: 100%;
@@ -493,15 +544,21 @@ h3.supplier-heading {
     width: 100%;
 }
 
-
+.twoColumn li::before {
+    color: green;
+    content:"\f101";
+    font-family: FontAwesome;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+}
 
 .twoColumn li{
-    background-image: url("../images/arrow.png");
-    background-position: left 8px;
-    background-repeat: no-repeat;
     padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left:15px;
     vertical-align: top;
+    position: relative;
 }
 
 .current-job-col {
@@ -509,7 +566,6 @@ h3.supplier-heading {
     float: left;
     text-align: center;
     width: 100%;
-    margin-bottom: 10px;
 }
 
 .current-job-col > a {
@@ -524,6 +580,7 @@ h3.supplier-heading {
     font-size: 14px;
     font-style: italic;
     width: 100%;
+    opacity: 0.8;
 }
 
 .current-job-col:hover, .current-job-col:focus, .current-job-col:hover a, .current-job-col:focus a{
