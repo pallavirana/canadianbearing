@@ -36,18 +36,38 @@
  }
 
 .dropdown-menu a:hover, .dropdown-menu a:hover {
-  text-decoration: none; background:#444; color:#fff
-}  
- @media (max-width:990px) { 
- nav.navbar .navbar-nav > li > a {
-    padding: 5px 10px;
+    background: #f5f5f5 none repeat scroll 0 0;
+    color: #444;
+    text-decoration: none;
 }
+ @media (max-width:990px) { 
+  nav.navbar .navbar-nav > li {
+    border-left: medium none;
+}
+ nav.navbar .navbar-nav > li > a {
+    padding:10px 15px !important;
+}
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li:hover > a, .navbar .navbar-nav > li a.active {
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    color: #fff;
+}
+
+nav.navbar{
+  display: block;
+   min-height: 40px;
+}
+
+ nav.navbar .navbar-nav > li > a {
+    padding:10px 10px !important;
+}
+
+
 }
 
 @media (max-width:768px) {
- nav.navbar .navbar-nav > li > a {
-    padding: 5px 10px;
-}
+
+
   
   .navbar-nav  {
      display: inline;
@@ -89,6 +109,48 @@
    }
 
 }
+@media (max-width:767px) {
+.navbar-brand {
+    float: left;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.topnav{
+    justify-content: center;
+    text-align: center;
+}
+.topnav ul {
+    float: none;
+    margin: 0 auto;
+}
+
+.footer{
+  padding:10px 0 20px;
+}
+
+.sitemap{
+  display: none;
+}
+.productionser{
+  display: none;
+}
+.smartsupply{
+  display: none;
+}
+.innovaenter{
+  display: none;
+}
+
+.footertop_link .li_title {
+    padding-top:10px;
+    padding-bottom: 0
+}
+
+}
  
 @media (min-width: 768px) {
   ul.nav li:hover > .dropdown-menu {
@@ -101,9 +163,7 @@ border-radius:0;padding:0
 @media (max-width: 767px) {
 .navbar-nav .open .dropdown-menu {border:0; }
 .navbar-collapse{padding:0}
-nav.navbar .navbar-nav > li > a {
-    padding: 5px 10px;
-}
+
 .navbar-nav .open .dropdown-menu{background:#fff; padding:0; border:0}
 .navbar-nav {
     margin: 0;
@@ -111,5 +171,12 @@ nav.navbar .navbar-nav > li > a {
 .navbar-default .navbar-collapse{padding:10px 0}
 
 }
-
+@media (max-width:320px) {
+.topnav ul {
+    padding: 10px 0;
+}
+.top-navbar ul li {
+    padding: 0 2px;
+}
+}
 
