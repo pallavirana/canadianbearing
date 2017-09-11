@@ -599,6 +599,10 @@ h3.location-title {
     position: relative;
      padding-left: 6px;
 }
+
+.head-add-first p {
+    padding-left: 0;
+}
 .head-address-block > a {
     font-size: 14px;
     line-height: 14px;
@@ -897,18 +901,24 @@ _:-o-prefocus, .selector {
 
 @media (max-width:575px) { 
 .footer-logo {
-    text-align: center;
+    text-align: left;
+     width: 27%;
+}
+
+.footer-logo img{
+    width: 50px;
+    margin-top: 4px;
 }
 .contact-mail {
-    margin-top: 10px;
+    margin-top:6px;
 }
 .footer-contact {
-    text-align: left !important; 
-    width: 50%;
+    text-align: left;
+    width: 34%;
 }
 
 .footer-socailicon {
-    width: 50%;
+    width: 39%;
 }
 
 .lastfooter_ul {
