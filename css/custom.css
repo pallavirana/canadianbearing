@@ -846,6 +846,10 @@ _:-o-prefocus, .selector {
     float: none;
     text-align: center;
 }
+
+#smartsupplylast {
+    display: none;
+}
 	
 }
 @media (max-width:640px) { 
