@@ -412,6 +412,13 @@ nav.navbar .navbar-nav > li.dropdown.show > a{
   color: #ccc;
 }
 
+.footer p {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
 footer{
   background:#363535;
   color: #fff;
@@ -861,7 +868,7 @@ _:-o-prefocus, .selector {
     font-size: 14px;
   }
 .carousel-caption h1 {
-    font-size:17px;
+    font-size:13px;
     font-weight: 600;
     margin-bottom:10px;
 }
@@ -875,6 +882,10 @@ _:-o-prefocus, .selector {
     width: 100%;
 }
 
+.top-navbar ul li {
+    padding: 0 2px;
+}
+
 }
 
 @media (max-width:575px) { 
@@ -883,7 +894,25 @@ _:-o-prefocus, .selector {
 }
 .contact-mail {
     margin-top: 10px;
-    }
+}
+.footer-contact {
+    text-align: left !important; 
+    width: 50%;
+}
+
+.footer-socailicon {
+    width: 50%;
+}
+
+.lastfooter_ul {
+    float: right;
+    margin-top: 0;
+}
+
+.lastfooter_ul a:last-child{
+  padding-right: 0;
+}
+
 }
 @media (max-width:360px) { 
 .career-or {
